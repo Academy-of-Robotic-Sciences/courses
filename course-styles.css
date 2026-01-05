@@ -1,0 +1,660 @@
+/**
+ * Robot Campus Course Styles
+ * Version 2.0.0
+ *
+ * Academic textbook styling for LiaScript courses
+ * Supports semantic content classes for theory, exercises, and historical notes
+ */
+
+/* ===================================================================
+   THEORY AND CONCEPTUAL CONTENT
+   =================================================================== */
+
+/**
+ * Core theoretical concepts and definitions
+ * Usage: <!-- class="theory-concept" -->
+ */
+.theory-concept {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0066cc;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+.theory-concept h1,
+.theory-concept h2,
+.theory-concept h3,
+.theory-concept h4 {
+    color: #0066cc;
+    margin-top: 0;
+}
+
+/**
+ * Historical notes and context
+ * Usage: <!-- class="historical-note" -->
+ */
+.historical-note {
+    background-color: #fff8e1;
+    border-left: 4px solid #ffa000;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.historical-note::before {
+    content: "📜 Historical Context";
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    color: #f57c00;
+    margin-bottom: 0.5rem;
+}
+
+/**
+ * Alternative approaches and methodologies
+ * Usage: <!-- class="alternative-approach" -->
+ */
+.alternative-approach {
+    background-color: #e8f5e9;
+    border-left: 4px solid #4caf50;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+.alternative-approach::before {
+    content: "🔄 Alternative Approach";
+    display: block;
+    font-weight: bold;
+    color: #388e3c;
+    margin-bottom: 0.5rem;
+}
+
+/* ===================================================================
+   EXERCISES AND LABORATORY WORK
+   =================================================================== */
+
+/**
+ * Optional laboratory exercises
+ * Usage: <!-- class="optional-exercise" -->
+ */
+.optional-exercise {
+    background-color: #e3f2fd;
+    border: 2px solid #1976d2;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+.optional-exercise::before {
+    content: "🧪 Optional Laboratory Exercise";
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #1565c0;
+    margin-bottom: 1rem;
+}
+
+/**
+ * Exercise tips and guidance
+ * Usage: <!-- class="exercise-tip" -->
+ */
+.exercise-tip {
+    background-color: #fff3e0;
+    border-left: 4px solid #ff9800;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.exercise-tip::before {
+    content: "💡 Tip";
+    display: block;
+    font-weight: bold;
+    color: #f57c00;
+    margin-bottom: 0.5rem;
+}
+
+/**
+ * Advanced exercise extensions
+ * Usage: <!-- class="exercise-advanced" -->
+ */
+.exercise-advanced {
+    background-color: #f3e5f5;
+    border-left: 4px solid #9c27b0;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.exercise-advanced::before {
+    content: "⚡ Advanced Extension";
+    display: block;
+    font-weight: bold;
+    color: #7b1fa2;
+    margin-bottom: 0.5rem;
+}
+
+/* ===================================================================
+   MATHEMATICAL CONTENT
+   =================================================================== */
+
+/**
+ * Mathematical equations and formulas
+ */
+.lia-formula,
+.katex {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* Display math blocks */
+.lia-formula-block {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+/* Inline math */
+.lia-formula-inline {
+    margin: 0 0.2em;
+}
+
+/* ===================================================================
+   CODE BLOCKS
+   =================================================================== */
+
+/**
+ * Code blocks with language-specific styling
+ */
+code {
+    background-color: #f5f5f5;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Fira Code', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+pre code {
+    display: block;
+    padding: 1rem;
+    overflow-x: auto;
+    background-color: #282c34;
+    color: #abb2bf;
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+/* Python code highlighting hints */
+pre code.language-python {
+    background-color: #2b2b2b;
+}
+
+/* C++ code highlighting hints */
+pre code.language-cpp,
+pre code.language-c {
+    background-color: #1e1e1e;
+}
+
+/* ROS2/Robot-specific code */
+pre code.language-ros2,
+pre code.language-launch {
+    background-color: #1a1a2e;
+}
+
+/* ===================================================================
+   QUIZ STYLING
+   =================================================================== */
+
+/**
+ * Quiz questions and answers
+ */
+.lia-quiz {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.lia-quiz-question {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.lia-quiz-answer {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.lia-quiz-answer:hover {
+    background-color: #e8e8e8;
+}
+
+.lia-quiz-correct {
+    background-color: #c8e6c9;
+    border-left: 4px solid #4caf50;
+}
+
+.lia-quiz-incorrect {
+    background-color: #ffcdd2;
+    border-left: 4px solid #f44336;
+}
+
+/* ===================================================================
+   TABLES
+   =================================================================== */
+
+/**
+ * Academic tables with clean styling
+ */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+th {
+    background-color: #0066cc;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Course overview tables */
+.course-overview-table th {
+    background-color: #1976d2;
+}
+
+/* ===================================================================
+   BLOCKQUOTES AND CALLOUTS
+   =================================================================== */
+
+/**
+ * Blockquotes for important notes
+ */
+blockquote {
+    border-left: 4px solid #757575;
+    padding-left: 1rem;
+    margin-left: 0;
+    font-style: italic;
+    color: #616161;
+}
+
+/* Course epigraph (opening quote) */
+blockquote:first-of-type {
+    font-size: 1.1em;
+    color: #424242;
+    border-left-color: #0066cc;
+    margin: 2rem 0;
+}
+
+/* ===================================================================
+   LISTS
+   =================================================================== */
+
+/**
+ * Styled lists for better readability
+ */
+ul, ol {
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Nested lists */
+ul ul, ol ul, ul ol, ol ol {
+    margin: 0.25rem 0;
+}
+
+/* Checkmark lists for learning objectives */
+ul.checkmark {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.checkmark li::before {
+    content: "✓ ";
+    color: #4caf50;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* ===================================================================
+   COURSE METADATA
+   =================================================================== */
+
+/**
+ * Course information boxes
+ */
+.course-info {
+    background-color: #e3f2fd;
+    border: 2px solid #1976d2;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.course-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.course-meta-item {
+    flex: 1 1 200px;
+}
+
+.course-meta-label {
+    font-weight: bold;
+    color: #0066cc;
+    display: block;
+}
+
+.course-meta-value {
+    color: #424242;
+}
+
+/* ===================================================================
+   LEARNING OBJECTIVES
+   =================================================================== */
+
+/**
+ * Learning objectives sections
+ */
+.learning-objectives {
+    background-color: #f1f8e9;
+    border-left: 4px solid #8bc34a;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 4px;
+}
+
+.learning-objectives h3 {
+    color: #689f38;
+    margin-top: 0;
+}
+
+/* ===================================================================
+   NAVIGATION AND STRUCTURE
+   =================================================================== */
+
+/**
+ * Section dividers
+ */
+hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 3rem 0;
+}
+
+/**
+ * Module headers
+ */
+h2 {
+    color: #1976d2;
+    border-bottom: 2px solid #e3f2fd;
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    color: #0288d1;
+    margin-top: 2rem;
+}
+
+/* ===================================================================
+   RESPONSIVE DESIGN
+   =================================================================== */
+
+/**
+ * Mobile-friendly adjustments
+ */
+@media (max-width: 768px) {
+    .theory-concept,
+    .historical-note,
+    .alternative-approach,
+    .optional-exercise {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .course-meta {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+/* ===================================================================
+   PRINT STYLES
+   =================================================================== */
+
+/**
+ * Optimizations for printing
+ */
+@media print {
+    .theory-concept,
+    .historical-note,
+    .alternative-approach,
+    .optional-exercise {
+        page-break-inside: avoid;
+        border: 1px solid #000;
+    }
+
+    pre code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+}
+
+/* ===================================================================
+   ACCESSIBILITY
+   =================================================================== */
+
+/**
+ * Focus indicators for keyboard navigation
+ */
+a:focus,
+button:focus,
+.lia-quiz-answer:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}
+
+/**
+ * Skip to content link
+ */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0066cc;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* ===================================================================
+   DARK MODE SUPPORT
+   =================================================================== */
+
+/**
+ * Automatic dark mode based on system preferences
+ */
+@media (prefers-color-scheme: dark) {
+    .theory-concept {
+        background-color: #1e2a3a;
+        border-left-color: #4a9eff;
+    }
+
+    .historical-note {
+        background-color: #2a2416;
+        border-left-color: #ffb74d;
+    }
+
+    .alternative-approach {
+        background-color: #1a2e1e;
+        border-left-color: #66bb6a;
+    }
+
+    .optional-exercise {
+        background-color: #1a2a3a;
+        border-color: #42a5f5;
+    }
+
+    .exercise-tip {
+        background-color: #2a2416;
+        border-left-color: #ffb74d;
+    }
+
+    .exercise-advanced {
+        background-color: #2a1a2e;
+        border-left-color: #ba68c8;
+    }
+
+    table {
+        background-color: #1e1e1e;
+    }
+
+    th {
+        background-color: #0d47a1;
+    }
+
+    td {
+        border-bottom-color: #424242;
+    }
+
+    tr:nth-child(even) {
+        background-color: #2a2a2a;
+    }
+
+    tr:hover {
+        background-color: #333;
+    }
+
+    code {
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+    }
+}
+
+/* ===================================================================
+   CUSTOM ELEMENTS
+   =================================================================== */
+
+/**
+ * Warning boxes
+ */
+.warning {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.warning::before {
+    content: "⚠️ Warning";
+    display: block;
+    font-weight: bold;
+    color: #f57c00;
+    margin-bottom: 0.5rem;
+}
+
+/**
+ * Success/completion indicators
+ */
+.success {
+    background-color: #d4edda;
+    border-left: 4px solid #28a745;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.success::before {
+    content: "✓ Success";
+    display: block;
+    font-weight: bold;
+    color: #155724;
+    margin-bottom: 0.5rem;
+}
+
+/**
+ * Course timeline/schedule items
+ */
+.schedule-info {
+    background-color: #e8eaf6;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    border-left: 4px solid #5c6bc0;
+}
+
+/**
+ * Reference citations
+ */
+.reference {
+    font-size: 0.9em;
+    color: #616161;
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid #bdbdbd;
+}
+
+/**
+ * Version badges
+ */
+.version-badge {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+/* ===================================================================
+   END OF STYLESHEET
+   =================================================================== */

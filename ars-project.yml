@@ -1,0 +1,133 @@
+title: Academy of Robotic Sciences
+comment: Comprehensive Robotics Education Curriculum - 200+ Hours
+logo: https://academy-of-robotic-sciences.github.io/courses/logo.png
+icon: https://academy-of-robotic-sciences.github.io/courses/favicon.ico
+footer: |
+  <p>Academy of Robotic Sciences (ARS) v2.0.0 | Academic Textbook Format</p>
+  <p><a href="https://github.com/Academy-of-Robotic-Sciences/courses">GitHub</a></p>
+
+meta:
+  og:title: Academy of Robotic Sciences - Robotics Education
+  og:description: 45+ courses covering robotics fundamentals, AI, hardware, software, and more
+  og:type: website
+
+collection:
+  # Foundation Section
+  - html: >
+      <h2>Foundation Courses (26 hours)</h2>
+      <p>Required foundation for all learning pathways</p>
+
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/foundations/rc-101.md
+    tags: [foundation, fundamentals]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/foundations/rc-102.md
+    tags: [foundation, mathematics]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/foundations/rc-103.md
+    tags: [foundation, programming]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/foundations/rc-104.md
+    tags: [foundation, physics]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/foundations/rc-105.md
+    tags: [foundation, electronics]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/foundations/rc-106.md
+    tags: [foundation, safety, ethics]
+
+  # Design Track
+  - html: >
+      <hr><h2>Design Track (24 hours)</h2>
+      <p>Computer-aided design and manufacturing</p>
+
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/design/design-201.md
+    tags: [design, cad]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/design/design-202.md
+    tags: [design, manufacturing]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/design/design-203.md
+    tags: [design, materials]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/design/design-204.md
+    tags: [design, parametric]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/design/design-205.md
+    tags: [design, capstone]
+
+  # Hardware Track
+  - html: >
+      <hr><h2>Hardware Track (24 hours)</h2>
+      <p>Electronics and sensor engineering</p>
+
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/hardware/hardware-201.md
+    tags: [hardware, electronics]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/hardware/hardware-202.md
+    tags: [hardware, microcontroller]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/hardware/hardware-203.md
+    tags: [hardware, sensors]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/hardware/hardware-204.md
+    tags: [hardware, power]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/hardware/hardware-205.md
+    tags: [hardware, capstone]
+
+  # Software Track
+  - html: >
+      <hr><h2>Software Track (28 hours)</h2>
+      <p>Control systems and ROS2</p>
+
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/software/software-201.md
+    tags: [software, control]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/software/software-202.md
+    tags: [software, ros2]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/software/software-203.md
+    tags: [software, motion-planning]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/software/software-204.md
+    tags: [software, capstone]
+
+  # AI Track
+  - html: >
+      <hr><h2>AI Track (36 hours)</h2>
+      <p>Machine learning and computer vision</p>
+
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/ai/ai-201.md
+    tags: [ai, machine-learning]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/ai/ai-202.md
+    tags: [ai, computer-vision]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/ai/ai-203.md
+    tags: [ai, lerobot, imitation-learning]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/ai/ai-204.md
+    tags: [ai, reinforcement-learning]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/ai/ai-205.md
+    tags: [ai, capstone]
+
+  # Systems Track
+  - html: >
+      <hr><h2>Systems Track (30 hours)</h2>
+      <p>Architecture and integration</p>
+
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/systems/systems-201.md
+    tags: [systems, architecture]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/systems/systems-202.md
+    tags: [systems, integration]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/systems/systems-203.md
+    tags: [systems, testing]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/systems/systems-204.md
+    tags: [systems, capstone]
+
+  # Humanoid Project
+  - html: >
+      <hr><h2>Humanoid Robot Project (90 hours)</h2>
+      <p>Build a complete humanoid robot from scratch</p>
+
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-101-foundations.md
+    tags: [humanoid, foundations]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-102-torso-frame.md
+    tags: [humanoid, mechanical]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-103-leg-mechanics.md
+    tags: [humanoid, mechanical, locomotion]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-104-arm-integration.md
+    tags: [humanoid, mechanical, manipulation]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-105-sensor-nervous-system.md
+    tags: [humanoid, sensors]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-106-balance-control.md
+    tags: [humanoid, control]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-107-walking.md
+    tags: [humanoid, locomotion]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-108-manipulation.md
+    tags: [humanoid, manipulation]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-109-ai-behaviors.md
+    tags: [humanoid, ai]
+  - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-110-integration-showcase.md
+    tags: [humanoid, capstone]
