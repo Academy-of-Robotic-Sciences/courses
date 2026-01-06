@@ -3,7 +3,7 @@ id: hum-105-sensor-nervous-system
 title: "HUM-105: Sensor Integration and State Estimation"
 sidebar_position: 6
 version: 2.0.0
-link: https://robotcampus.dev/styles/course-styles.css
+link: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 ---
 
 # HUM-105: Sensor Integration and State Estimation

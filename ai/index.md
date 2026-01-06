@@ -1,6 +1,6 @@
 <!--
 author:   Dr. Alex Chen
-email:    alex.chen@robotcampus.dev
+email:    alex.chen@academy-of-robotic-sciences.github.io
 version:  2.0.0
 
 language: en
@@ -8,7 +8,6 @@ narrator: US English Female
 
 comment:  Artificial Intelligence for Robotics: A comprehensive specialization track covering machine learning fundamentals, computer vision, imitation learning, reinforcement learning, and autonomous system integration.
 
-icon:     https://robotcampus.dev/logos/ai-track.png
 
 mode:     Textbook
 
@@ -17,7 +16,7 @@ mode:     Textbook
 </style>
 @end
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 import:   https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->

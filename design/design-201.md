@@ -1,6 +1,6 @@
 <!--
 author:   Dr. Maria Torres
-email:    maria.torres@robotcampus.dev
+email:    maria.torres@academy-of-robotic-sciences.github.io
 version:  2.0.0
 
 language: en
@@ -8,11 +8,10 @@ narrator: US English Female
 
 comment:  Parametric Solid Modeling Fundamentals: Comprehensive treatment of CAD theory, geometric constraint solving, sketch-based modeling, and feature-based design methodologies.
 
-icon:     https://robotcampus.dev/logos/design-201.png
 
 mode:     Textbook
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 -->
 

@@ -1,6 +1,6 @@
 <!--
 author:   Dr. Maria Torres
-email:    maria.torres@robotcampus.dev
+email:    maria.torres@academy-of-robotic-sciences.github.io
 version:  2.0.0
 
 language: en
@@ -8,11 +8,10 @@ narrator: US English Female
 
 comment:  Structural Mechanics and Analysis: Comprehensive treatment of stress-strain theory, finite element analysis, failure criteria, and design optimization for mechanical components.
 
-icon:     https://robotcampus.dev/logos/design-203.png
 
 mode:     Textbook
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 -->
 

@@ -1,6 +1,6 @@
 <!--
 author:   Dr. Michael Chen
-email:    michael.chen@robotcampus.dev
+email:    michael.chen@academy-of-robotic-sciences.github.io
 version:  2.0.0
 
 language: en
@@ -8,11 +8,10 @@ narrator: US English Male
 
 comment:  Production Deployment: Comprehensive treatment of configuration management, observability, logging architectures, health monitoring, documentation standards, and system lifecycle management for production robotic systems.
 
-icon:     https://robotcampus.dev/logos/systems-204.png
 
 mode:     Textbook
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 import:   https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->

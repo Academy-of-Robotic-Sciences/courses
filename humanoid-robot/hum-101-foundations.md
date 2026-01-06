@@ -3,7 +3,7 @@ id: hum-101-foundations
 title: "HUM-101: Foundations of Humanoid Balance and Control"
 sidebar_position: 2
 version: 2.0.0
-link: https://robotcampus.dev/styles/course-styles.css
+link: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 ---
 
 # HUM-101: Foundations of Humanoid Balance and Control

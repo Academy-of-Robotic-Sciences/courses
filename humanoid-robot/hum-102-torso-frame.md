@@ -3,7 +3,7 @@ id: hum-102-torso-frame
 title: "HUM-102: Structural Design and Torso Assembly"
 sidebar_position: 3
 version: 2.0.0
-link: https://robotcampus.dev/styles/course-styles.css
+link: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 ---
 
 # HUM-102: Structural Design and Torso Assembly

@@ -1,17 +1,16 @@
 <!--
 author:   Robot Campus Team
-email:    hello@robotcampus.dev
+email:    contact@academy-of-robotic-sciences.github.io
 version:  2.0.0
 language: en
 narrator: US English Female
 
 comment:  Autonomous System Integration: A capstone project course integrating software architecture, distributed systems, motion planning, and control into a complete autonomous manipulation system. Students design, implement, and deploy pick-and-place applications.
 
-logo:     https://robotcampus.dev/logo.png
 
 mode:     Textbook
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 -->
 

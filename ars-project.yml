@@ -1,10 +1,10 @@
 title: Academy of Robotic Sciences
-comment: Comprehensive Robotics Education Curriculum - 200+ Hours
-logo: https://academy-of-robotic-sciences.github.io/courses/logo.png
-icon: https://academy-of-robotic-sciences.github.io/courses/favicon.ico
+comment: Comprehensive Robotics Education Curriculum
 footer: |
-  <p>Academy of Robotic Sciences (ARS) v2.0.0 | Academic Textbook Format</p>
-  <p><a href="https://github.com/Academy-of-Robotic-Sciences/courses">GitHub</a></p>
+  <div style="text-align:center;padding:20px 0;">
+    <p style="margin:0;color:#8b949e;font-size:0.9rem;">Academy of Robotic Sciences (ARS) v2.0.0</p>
+    <p style="margin:8px 0 0 0;"><a href="https://github.com/Academy-of-Robotic-Sciences/courses" style="color:#a5b4fc;text-decoration:none;">View on GitHub</a></p>
+  </div>
 
 meta:
   og:title: Academy of Robotic Sciences - Robotics Education
@@ -12,10 +12,238 @@ meta:
   og:type: website
 
 collection:
+  # Fix emoji encoding
+  - html: >
+      <meta charset="UTF-8">
+
+  # Custom CSS - Dark mode design
+  - html: >
+      <style>
+        /* Hide default header text but keep filter */
+        .py-5.text-center.container h1.fw-light,
+        .py-5.text-center.container p.lead { display: none !important; }
+        .py-5.text-center.container {
+          padding-top: 1rem !important;
+          padding-bottom: 0 !important;
+        }
+        .py-5.text-center.container .row.py-lg-5 { padding: 0 !important; }
+        /* Style the category filter - DARK */
+        #categorySelect {
+          max-width: 300px;
+          margin: 0 auto;
+          border-radius: 12px;
+          border: 2px solid #667eea;
+          padding: 10px 16px;
+          font-size: 0.95rem;
+          background: #161b22;
+          color: #e6edf3;
+        }
+        #categorySelect option {
+          background: #161b22;
+          color: #e6edf3;
+        }
+        #chipsContainer { margin-bottom: 20px; }
+
+        /* Page background - DARK */
+        body { background: linear-gradient(180deg, #0d1117 0%, #161b22 100%) !important; }
+        .bg-light { background: transparent !important; }
+
+        /* Card styling - DARK glassmorphism */
+        .card {
+          border-radius: 16px !important;
+          border: 1px solid rgba(255,255,255,0.1) !important;
+          background: rgba(30, 35, 42, 0.95) !important;
+          backdrop-filter: blur(10px) !important;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+          transition: all 0.3s ease !important;
+          overflow: hidden !important;
+        }
+        .card:hover {
+          transform: translateY(-8px) !important;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.5) !important;
+          border-color: rgba(102,126,234,0.3) !important;
+        }
+
+        /* Hide broken images */
+        .card-img-top { display: none !important; }
+
+        /* Card body styling - DARK */
+        .card-body {
+          padding: 24px !important;
+        }
+        .card-title {
+          font-weight: 700 !important;
+          font-size: 1.1rem !important;
+          color: #e6edf3 !important;
+          margin-bottom: 12px !important;
+        }
+        .card-text {
+          color: #8b949e !important;
+          font-size: 0.9rem !important;
+          line-height: 1.6 !important;
+        }
+
+        /* Tag badges - override Bootstrap bg-light */
+        .badge.rounded-pill.bg-light.text-dark {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+          color: white !important;
+          font-weight: 500 !important;
+          padding: 6px 14px !important;
+          margin: 2px !important;
+          font-size: 0.75rem !important;
+          border: none !important;
+        }
+        .badge.rounded-pill.bg-primary {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        }
+
+        /* Track headers */
+        .track-header {
+          padding: 28px 32px;
+          border-radius: 20px;
+          margin: 50px 0 24px 0;
+          color: white;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+          position: relative;
+          overflow: hidden;
+        }
+        .track-header::before {
+          content: '';
+          position: absolute;
+          top: 0; left: 0; right: 0; bottom: 0;
+          background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+        }
+        .track-header h2 {
+          margin: 0 0 10px 0;
+          font-weight: 800;
+          font-size: 1.75rem;
+          position: relative;
+        }
+        .track-header p {
+          margin: 0;
+          opacity: 0.95;
+          font-size: 1rem;
+          position: relative;
+        }
+        .track-header .duration {
+          background: rgba(255,255,255,0.25);
+          padding: 6px 16px;
+          border-radius: 25px;
+          font-size: 0.9rem;
+          font-weight: 600;
+          display: inline-block;
+          margin-top: 14px;
+          position: relative;
+        }
+
+        /* Hero section */
+        .hero-section {
+          background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+          color: white;
+          padding: 80px 50px;
+          border-radius: 24px;
+          margin-bottom: 50px;
+          text-align: center;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+          position: relative;
+          overflow: hidden;
+        }
+        .hero-section::before {
+          content: '';
+          position: absolute;
+          top: -50%; left: -50%;
+          width: 200%; height: 200%;
+          background: radial-gradient(circle, rgba(102,126,234,0.1) 0%, transparent 50%);
+          animation: pulse 15s ease-in-out infinite;
+        }
+        @keyframes pulse {
+          0%, 100% { transform: scale(1); opacity: 0.5; }
+          50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        .hero-section h1 {
+          font-size: 3rem;
+          font-weight: 900;
+          margin-bottom: 16px;
+          position: relative;
+          background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        .hero-section .tagline {
+          font-size: 1.3rem;
+          opacity: 0.9;
+          margin-bottom: 32px;
+          position: relative;
+        }
+        .hero-stats {
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          flex-wrap: wrap;
+          position: relative;
+        }
+        .hero-stat {
+          background: rgba(255,255,255,0.1);
+          backdrop-filter: blur(10px);
+          padding: 24px 32px;
+          border-radius: 16px;
+          min-width: 140px;
+          border: 1px solid rgba(255,255,255,0.2);
+        }
+        .hero-stat .number {
+          font-size: 2.5rem;
+          font-weight: 800;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        .hero-stat .label {
+          font-size: 1rem;
+          opacity: 0.85;
+          margin-top: 4px;
+        }
+
+        /* Container width */
+        .container { max-width: 1400px !important; }
+
+        /* Link styling - DARK */
+        .link-dark {
+          text-decoration: none !important;
+          color: #e6edf3 !important;
+        }
+        .link-dark:hover { color: #a5b4fc !important; }
+      </style>
+
+  # Hero Section
+  - html: >
+      <div class="hero-section">
+        <h1>Academy of Robotic Sciences</h1>
+        <p class="tagline">Master the Future of Robotics: From Theory to Innovation</p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="number">45+</div>
+            <div class="label">Courses</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number">200+</div>
+            <div class="label">Hours</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number">7</div>
+            <div class="label">Tracks</div>
+          </div>
+        </div>
+      </div>
+
   # Foundation Section
   - html: >
-      <h2>Foundation Courses (26 hours)</h2>
-      <p>Required foundation for all learning pathways</p>
+      <div class="track-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <h2>📚 Foundation Courses</h2>
+        <p>Essential theory and fundamentals for all pathways</p>
+        <span class="duration">26 hours</span>
+      </div>
 
   - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/foundations/rc-101.md
     tags: [foundation, fundamentals]
@@ -32,8 +260,11 @@ collection:
 
   # Design Track
   - html: >
-      <hr><h2>Design Track (24 hours)</h2>
-      <p>Computer-aided design and manufacturing</p>
+      <div class="track-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+        <h2>🎨 Design Track</h2>
+        <p>CAD, manufacturing, and mechanical engineering</p>
+        <span class="duration">24 hours</span>
+      </div>
 
   - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/design/design-201.md
     tags: [design, cad]
@@ -48,8 +279,11 @@ collection:
 
   # Hardware Track
   - html: >
-      <hr><h2>Hardware Track (24 hours)</h2>
-      <p>Electronics and sensor engineering</p>
+      <div class="track-header" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+        <h2>🔧 Hardware Track</h2>
+        <p>Electronics, sensors, and embedded systems</p>
+        <span class="duration">24 hours</span>
+      </div>
 
   - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/hardware/hardware-201.md
     tags: [hardware, electronics]
@@ -64,8 +298,11 @@ collection:
 
   # Software Track
   - html: >
-      <hr><h2>Software Track (28 hours)</h2>
-      <p>Control systems and ROS2</p>
+      <div class="track-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+        <h2>💻 Software Track</h2>
+        <p>Control systems, ROS2, and motion planning</p>
+        <span class="duration">28 hours</span>
+      </div>
 
   - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/software/software-201.md
     tags: [software, control]
@@ -78,8 +315,11 @@ collection:
 
   # AI Track
   - html: >
-      <hr><h2>AI Track (36 hours)</h2>
-      <p>Machine learning and computer vision</p>
+      <div class="track-header" style="background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);">
+        <h2>🤖 AI Track</h2>
+        <p>Machine learning and computer vision</p>
+        <span class="duration">36 hours</span>
+      </div>
 
   - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/ai/ai-201.md
     tags: [ai, machine-learning]
@@ -94,8 +334,11 @@ collection:
 
   # Systems Track
   - html: >
-      <hr><h2>Systems Track (30 hours)</h2>
-      <p>Architecture and integration</p>
+      <div class="track-header" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+        <h2>⚙️ Systems Track</h2>
+        <p>Architecture, integration, and deployment</p>
+        <span class="duration">30 hours</span>
+      </div>
 
   - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/systems/systems-201.md
     tags: [systems, architecture]
@@ -108,8 +351,11 @@ collection:
 
   # Humanoid Project
   - html: >
-      <hr><h2>Humanoid Robot Project (90 hours)</h2>
-      <p>Build a complete humanoid robot from scratch</p>
+      <div class="track-header" style="background: linear-gradient(135deg, #fa8231 0%, #f7d794 100%);">
+        <h2>🦾 Humanoid Robot Project</h2>
+        <p>Build a complete humanoid robot from scratch</p>
+        <span class="duration">90 hours</span>
+      </div>
 
   - url: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/humanoid-robot/hum-101-foundations.md
     tags: [humanoid, foundations]

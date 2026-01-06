@@ -3,7 +3,7 @@ id: hum-103-leg-mechanics
 title: "HUM-103: Bipedal Leg Mechanics and Assembly"
 sidebar_position: 4
 version: 2.0.0
-link: https://robotcampus.dev/styles/course-styles.css
+link: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 ---
 
 # HUM-103: Bipedal Leg Mechanics and Assembly

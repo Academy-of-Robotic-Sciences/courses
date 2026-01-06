@@ -3,7 +3,7 @@ id: hum-104-arm-integration
 title: "HUM-104: Arm Integration and Manipulation Kinematics"
 sidebar_position: 5
 version: 2.0.0
-link: https://robotcampus.dev/styles/course-styles.css
+link: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 ---
 
 # HUM-104: Arm Integration and Manipulation Kinematics

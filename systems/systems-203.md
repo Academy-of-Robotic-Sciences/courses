@@ -1,6 +1,6 @@
 <!--
 author:   Dr. Michael Chen
-email:    michael.chen@robotcampus.dev
+email:    michael.chen@academy-of-robotic-sciences.github.io
 version:  2.0.0
 
 language: en
@@ -8,11 +8,10 @@ narrator: US English Male
 
 comment:  Reliability and Verification: Comprehensive treatment of software testing theory, simulation-based verification, continuous integration, fault tolerance, and formal methods for safety-critical robotic systems.
 
-icon:     https://robotcampus.dev/logos/systems-203.png
 
 mode:     Textbook
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 import:   https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->

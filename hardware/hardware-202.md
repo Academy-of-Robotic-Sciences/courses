@@ -1,6 +1,6 @@
 <!--
 author:   Dr. Elena Martinez
-email:    elena.martinez@robotcampus.dev
+email:    elena.martinez@academy-of-robotic-sciences.github.io
 version:  2.0.0
 
 language: en
@@ -8,11 +8,10 @@ narrator: US English Female
 
 comment:  Embedded Systems Programming: Comprehensive treatment of microcontroller architectures, interrupt-driven programming, hardware abstraction, and real-time embedded systems for robotics.
 
-icon:     https://robotcampus.dev/logos/hardware-202.png
 
 mode:     Textbook
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 import:   https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->

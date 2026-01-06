@@ -1,17 +1,16 @@
 <!--
 author:   Robot Campus Team
-email:    hello@robotcampus.dev
+email:    contact@academy-of-robotic-sciences.github.io
 version:  2.0.0
 language: en
 narrator: US English Female
 
 comment:  Distributed Robotics Systems with ROS2: A comprehensive course on the Robot Operating System 2 framework, covering middleware architecture, communication patterns, distributed system design, and robotic application development.
 
-logo:     https://robotcampus.dev/logo.png
 
 mode:     Textbook
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 -->
 

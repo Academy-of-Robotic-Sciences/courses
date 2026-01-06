@@ -1,17 +1,16 @@
 <!--
 author:   Robot Campus Team
-email:    hello@robotcampus.dev
+email:    contact@academy-of-robotic-sciences.github.io
 version:  2.0.0
 language: en
 narrator: US English Female
 
 comment:  Software Architecture for Robot Control: A comprehensive course on professional software engineering for robotics, covering API design, modular architecture, Python-C++ hybrid systems, language bindings, and test-driven development.
 
-logo:     https://robotcampus.dev/logo.png
 
 mode:     Textbook
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 -->
 

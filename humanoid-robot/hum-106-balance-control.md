@@ -3,7 +3,7 @@ id: hum-106-balance-control
 title: "HUM-106: Balance Control and Stability"
 sidebar_position: 7
 version: 2.0.0
-link: https://robotcampus.dev/styles/course-styles.css
+link: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 ---
 
 # HUM-106: Balance Control and Stability

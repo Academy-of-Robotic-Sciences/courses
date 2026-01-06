@@ -3,7 +3,7 @@ id: humanoid-robot-project
 title: "Humanoid Robotics: Theory and Practice"
 sidebar_position: 1
 version: 2.0.0
-link: https://robotcampus.dev/styles/course-styles.css
+link: https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 ---
 
 # Humanoid Robotics: Theory and Practice

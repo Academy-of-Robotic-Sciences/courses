@@ -1,17 +1,16 @@
 <!--
 author:   Robot Campus Team
-email:    hello@robotcampus.dev
+email:    contact@academy-of-robotic-sciences.github.io
 version:  2.0.0
 language: en
 narrator: US English Female
 
 comment:  Motion Planning for Robotic Manipulators: A comprehensive course on algorithmic motion planning, configuration space representations, collision detection, sampling-based planning algorithms, and the MoveIt2 framework for manipulation.
 
-logo:     https://robotcampus.dev/logo.png
 
 mode:     Textbook
 
-link:     https://robotcampus.dev/styles/course-styles.css
+link:     https://raw.githubusercontent.com/Academy-of-Robotic-Sciences/courses/main/course-styles.css
 
 -->
 
